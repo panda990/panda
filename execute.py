@@ -64,17 +64,17 @@ def create_model():
         return model
 
 
-dataset_array, dataset_labels = read_data(dataset_path=gConfig['dataset_path'], im_dim=gConfig['im_dim'],
-   num_channels=gConfig['num_channels'],num_files=5,images_per_file=gConfig['images_per_file'])
-
-test_array, test_labels = read_data(dataset_path=gConfig['test_path'], im_dim=gConfig['im_dim'],
-   num_channels=gConfig['num_channels'],num_files=1,images_per_file=gConfig['images_per_file'])
-
-dataset_array=dataset_array.astype('float32')/255
-test_array=test_array.astype('float32')/255
-
-dataset_labels=tf.keras.utils.to_categorical(dataset_labels,10)
-test_labels=tf.keras.utils.to_categorical(test_labels,10)
+# dataset_array, dataset_labels = read_data(dataset_path=gConfig['dataset_path'], im_dim=gConfig['im_dim'],
+#    num_channels=gConfig['num_channels'],num_files=5,images_per_file=gConfig['images_per_file'])
+#
+# test_array, test_labels = read_data(dataset_path=gConfig['test_path'], im_dim=gConfig['im_dim'],
+#    num_channels=gConfig['num_channels'],num_files=1,images_per_file=gConfig['images_per_file'])
+#
+# dataset_array=dataset_array.astype('float32')/255
+# test_array=test_array.astype('float32')/255
+#
+# dataset_labels=tf.keras.utils.to_categorical(dataset_labels,10)
+# test_labels=tf.keras.utils.to_categorical(test_labels,10)
 
 def train():
     
