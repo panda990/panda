@@ -1,3 +1,4 @@
+# -*- coding:UTF-8 -*-
 #导入所有的依赖包
 import  tensorflow as tf
 import numpy as np

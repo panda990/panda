@@ -1,3 +1,4 @@
+# -*- coding:UTF-8 -*-
 #导入所有依赖包
 import flask
 import werkzeug

@@ -1,3 +1,4 @@
+# -*- coding:UTF-8 -*-
 #导入需要的依赖包
 import tensorflow as tf
 import getConfig
