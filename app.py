@@ -39,21 +39,7 @@ def CNN_predict():
                                  predicted_class=predicted_class)
 
 
-"""
-flask路由系统：
-1、使用flask.Flask.route() 修饰器。
-2、使用flask.Flask.add_url_rule()函数。
-3、直接访问基于werkzeug路由系统的flask.Flask.url_map.
-参考知识链接：https://www.jianshu.com/p/e69016bd8f08
-1、@app.route('/index.html')
-    def index():
-        return "Hello World!"
-2、def index():
-    return "Hello World!"
-    index = app.route('/index.html')(index)
-app.add_url_rule:app.add_url_rule(rule,endpoint,view_func)
-关于rule、ednpoint、view_func以及函数注册路由的原理可以参考：https://www.cnblogs.com/eric-nirnava/p/endpoint.html
-"""
+
 app.add_url_rule(rule="/predict/", endpoint="predict", view_func=CNN_predict)
 """
 知识点：
