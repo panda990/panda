@@ -42,32 +42,7 @@ def CNN_predict():
 
 
 app.add_url_rule(rule="/predict/", endpoint="predict", view_func=CNN_predict)
-"""
-知识点：
-flask.request属性
-form: 
-一个从POST和PUT请求解析的 MultiDict（一键多值字典）。
-args: 
-MultiDict，要操作 URL （如 ?key=value ）中提交的参数可以使用 args 属性:
-searchword = request.args.get('key', '')
-values: 
-CombinedMultiDict，内容是form和args。 
-可以使用values替代form和args。
-cookies: 
-顾名思义，请求的cookies，类型是dict。
-stream: 
-在可知的mimetype下，如果进来的表单数据无法解码，会没有任何改动的保存到这个·stream·以供使用。很多时候，当请求的数据转换为string时，使用data是最好的方式。这个stream只返回数据一次。
-headers: 
-请求头，字典类型。
-data: 
-包含了请求的数据，并转换为字符串，除非是一个Flask无法处理的mimetype。
-files: 
-MultiDict，带有通过POST或PUT请求上传的文件。
-method: 
-请求方法，比如POST、GET
-知识点参考链接：https://blog.csdn.net/yannanxiu/article/details/53116652
-werkzeug
-"""
+
 
 def upload_image():
     global secure_filename

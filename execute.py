@@ -54,10 +54,11 @@ def create_model():
     if  ckpt:
         
         model_file=os.path.join(gConfig['working_directory'], ckpt[-1])
+        print(model_file)
         print("Reading model parameters from %s" % model_file)
        
 
-        model=tf.keras.models.load_model(model_file)
+        model=tf.keras.models.load_model("model_dir/cnn_model.h5")
         return model
     else:
         model=cnnModel(gConfig['keeps'])
